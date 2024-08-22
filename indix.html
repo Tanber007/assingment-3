@@ -24,14 +24,13 @@
         .hide{
             display: none;
         }
-        section{
-            margin-bottom: 100px;
-        }
     </style>
     <script>
         tailwind.config = {
           theme: {
             extend: {
+              'hero-pattern': "url('/img/hero-pattern.svg')",
+              'footer-texture': "url('/img/footer-texture.png')",
               colors: {
                 clifford: '#da373d',
                 'grin': '#ABEF5F',
@@ -43,7 +42,7 @@
       </script>
 </head>
 <body class="google-font">
-    <header class="w-full">
+    <header class="w-full mb-20">
         <!-- Navebar Section -->
       <nav class="container w-11/12 mx-auto ">
         <div class="navbar">
@@ -103,7 +102,7 @@
                   </svg>
                 </button>
                   <button class="btn btn-ghost bg-[#E9E9E9] btn-circle h-5 p-5"><i class="fa-solid fa-cart-shopping"></i></button>
-                    <a class="btn bg-grin">Book Consult<i class="bg-black -rotate-45 text-white rounded-full px-1 py-1 w-6 h-6 fa-solid fa-arrow-right"></i></a>
+                    <a class="btn bg-grin font-extrabold rounded-3xl text-lg">Book Consult<i class="bg-black -rotate-45 text-white rounded-full px-1 py-1 w-7 h-7 fa-solid fa-arrow-right"></i></a>
              </div>
           </div>
       </nav>
@@ -172,7 +171,6 @@
               <div class="mb-8">
                   <div class="flex justify-center">
                     <button class="btn place-content-center text-[#494949] font-bold bg-white rounded-2xl btn-sm mb-5"><i class="fa-solid fa-arrow-right"></i> About Us</button>
-
                   </div>
                 <h2 class="text-center text-4xl font-extrabold">Our Works Process</h2>
                 <br>
@@ -207,6 +205,24 @@
                </div>
            </div>
        </section>
+
+       <!-- Our Latest Portfolio -->
+       <section></section>
+
+       <!-- Discuss Next Project -->
+        <section>
+          <div class="w-full"
+          style="background-image: url('assets/bg.jpg');">
+             <div class="py-8 mx-auto w-11/12">
+              <div class="flex justify-center">
+                <button class="btn place-content-center text-[#494949] font-bold bg-grin-2 rounded-2xl btn-sm mb-5"><i class="fa-solid fa-arrow-right"></i> let's Connect</button>
+              </div>
+              <h1 class="text-center text-3xl w-4/5 lg:w-full mx-auto lg:text-5xl font-extrabold">Let's Discuss Next Project</h1>
+              <br>
+                <p class="text-center mx-auto text-gray-500 w-11/12 lg:w-3/5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+             </div>
+          </div>
+        </section>
     </main>
     <footer>
 
